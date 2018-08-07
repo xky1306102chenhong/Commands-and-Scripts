@@ -18,3 +18,12 @@ ip address
 
 # bat script: 当前目录下的所有的png后缀改为jpg
 ren *.png *.jpg
+
+# cv2 function: 读取/写入 图片（英文）**
+img=cv2.imread("D:/a.jpg")
+cv2.imwrite("D:/b.jpg",img)
+
+# cv2 function: 读取/写入 图片（非英文）***
+img=cv2.imdecode(numpy.fromfile("D:/啊.jpg",dtype=np.uint8),cv2.IMREAD_UNCHANGED)
+cv2.imencode(".jpg",img)[1].tofile("D:/哦.jpg")
+
