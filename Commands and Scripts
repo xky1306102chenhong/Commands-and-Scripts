@@ -49,3 +49,9 @@ ls -lR| grep "^-" | wc -l
 
 # 查看某目录下文件夹（目录）的个数（包括子目录里）***
 ls -lR| grep "^d" | wc -l
+
+# 说明:监视filename文件的尾部内容(默认10行,相当于增加参数 -n 10),刷新显示在屏幕上。退出,按下CTRL+C
+tail -f filename
+
+# 说明:显示filename最后20行
+tail -n 20 filename
