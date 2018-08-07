@@ -1,0 +1,7 @@
+# centos command: 后台运行python脚本
+nohup python XXX.py --param1 --param2 > myout 2>&1 &
+
+# centos command: 当前目录下解压
+tar -zxvf XXX.tar
+unzip XXX.zip
+unrar x XXX.rar
