@@ -35,5 +35,17 @@ python 3的/表示精确除，其余都是向下取整除
 # 2. 安装boost
 # 3. 下载Dlib，解压，在命令行中进入dlib目录，然后运行python setup.py install
 
+# 查看目录及其包含的文件的大小 ***
+du -ch directory
+
 # 查看当前目录下文件的个数 ***
 ls -l | grep "^-" | wc -l
+
+# 查看当前目录下以.jpg为后缀文件的个数 ***
+ls -l | grep ".jpg" | wc -l
+
+# 查看当前目录下文件的个数（包括子目录）***
+ls -lR| grep "^-" | wc -l
+
+# 查看某目录下文件夹（目录）的个数（包括子目录里）***
+ls -lR| grep "^d" | wc -l
