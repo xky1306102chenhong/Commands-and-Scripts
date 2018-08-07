@@ -5,3 +5,16 @@ nohup python XXX.py --param1 --param2 > myout 2>&1 &
 tar -zxvf XXX.tar
 unzip XXX.zip
 unrar x XXX.rar
+
+# centos command: 图形界面和命令行界面的切换
+ctrl+alt+F2
+
+# Pycharm Configuration: run configuration的Environment variables添加如下
+LD_LIBRARY_PATH=/usr/local/cuda/lib64
+
+# centos command: 查看ip地址
+ifconfig
+ip address
+
+# bat script: 当前目录下的所有的png后缀改为jpg
+ren *.png *.jpg
