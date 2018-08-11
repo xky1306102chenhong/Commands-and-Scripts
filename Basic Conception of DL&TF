@@ -1,0 +1,4 @@
+# tf.Example
+一种标准的proto buffer，描述机器学习模型训练和推断的输入数据
+
+# 特征集 (feature set)
