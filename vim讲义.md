@@ -60,6 +60,14 @@ filetype plugin indent on    " required
 ```
 ：PluginInstall
 ```
+4. 卸载
+```
+：PluginClean
+```
+5. 更新
+```
+：PluginUpdate
+```
 
 # 目录树
 1. 下载nerdtree
