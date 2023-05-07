@@ -78,3 +78,9 @@ filetype plugin indent on    " required
 ```
 Plugin 'preservim/nerdtree'
 ```
+3. 配置启动nerdtree的快捷键
+```
+".vimrc
+map <C-n> :NERDTreeMirror<CR>
+map <C-n> :NERDTreeToggle<CR>
+```
