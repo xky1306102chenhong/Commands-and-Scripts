@@ -1,0 +1,25 @@
+# __attribute__((aligned(65536)))
+举例：
+1. 修饰变量的场景，使变量首地址按65536对齐， 不会改变变量大小
+```
+char g_aucArea[10] __attribute__((aligned(65536)));
+```
+2. 修饰结构类型的场景，使得首地址按1024对齐，结构类型大小也按1024对齐
+```
+#include <stdio.h>             
+                               
+typedef struct tagStudent {    
+    char aucName[10];
+} __attribute__((aligned(1024))) VOS_PATCH_STUDENT_S; 
+
+VOS_PATCH_STUDENT_S g_stStudent;
+
+int main()
+{
+    printf("0x%x\n%d\n", &g_stStudent, sizeof(VOS_PATCH_STUDENT_S));
+    return 0;
+}
+----output---
+0x7345a800
+1024
+```
